@@ -1,0 +1,159 @@
+.homepage {
+  height: 100vh;
+  width: 100vw;
+  background: #5a5560;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.select{
+  margin-left: 10px;
+}
+
+@media (min-width: 651px) {
+  .todo2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  .add-edit-input {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 30px;
+    padding: 5px 2px;
+    flex: 1;
+  }
+
+    .add-edit-input {
+      margin-left: 15px;
+    }
+
+    .priority{
+      font-weight: 700;
+      font-size: 25px;
+      margin-right: 10px;
+      border-radius: 9px;
+    }
+
+    .option{
+      border-radius: 9px;
+      font-weight: 600;
+      font-size: 25px;
+    }
+
+  .yestodo {
+    width: 575px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: rgb(30, 189, 30);
+  }
+
+  .yestodo > h1 {
+    width: 500px;
+    /* background-color: rgb(211, 211, 211); */
+    padding: 5px 10px;
+  }
+  .notodo {
+    width: 575px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: rgba(219, 54, 54, 0.767);
+  }
+
+  .notodo > h1 {
+    width: 500px;
+    padding: 5px 10px;
+  }
+    .edit-button,
+    .delete-button {
+      cursor: pointer;
+      margin-left: 10px;
+    }
+}
+
+@media (min-width: 201px) and (max-width: 700px) {
+  .todo2 {
+    align-items: center;
+  }
+
+  .add-edit-input {
+    width: 300px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 30px;
+    padding: 5px 2px;
+    margin-bottom: 10px;
+    flex: 1;
+  }
+
+  .yestodo {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+    padding: 5000px;
+  }
+  .notodo {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  .yestodo>h1 {
+    width: 250px;
+    background-color: rgb(211, 211, 211);
+    padding: 1px 1px;
+  }
+  .notodo>h1 {
+    width: 250px;
+    background-color: rgb(211, 211, 211);
+    padding: 1px 1px;
+  }
+    .edit-button{
+      content: "\a";
+      transform: scale(1);
+      cursor: pointer;
+      margin-left: 2px;
+    }
+    .edit-button {
+      transform: scale(1);
+      cursor: pointer;
+      margin-left: 2px;
+    }
+}
+
+.add-button {
+  margin: 20px;
+  transform: scale(2);
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #e5bd29;
+}
+
+.logout-icon {
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 20px;
+  background: red;
+  color: white;
+}
